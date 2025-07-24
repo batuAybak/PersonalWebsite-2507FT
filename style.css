@@ -1,0 +1,130 @@
+body {
+  background-color: #5e936c;
+	display: flex;
+	flex-direction: column;
+}
+
+header {
+  background-color: #3e5f44;
+	box-shadow: 1px 1px 20px black;
+
+  display: flex;
+  justify-content: space-around;
+}
+
+nav {
+  /* navigation buttons */
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+/* navigation links */
+nav > a {
+  text-decoration: none;
+  color: #93da97;
+  font-size: 1.4rem;
+  font-family: "Sansation", sans-serif;
+  font-weight: 300;
+}
+
+main {
+  background-color: #3e5f44;
+  text-align: center;
+  margin: 5% 10vw;
+	/* padding-bottom: 3%; */
+  box-shadow: 1px 1px 20px black;
+	height: auto;
+  /* display: flex; */
+  /* justify-content: center; */
+}
+
+footer {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  align-items: center;
+  background-color: #3e5f44;
+	box-shadow: 1px 1px 20px black;
+  position: fixed;
+  bottom: 0;
+  padding: 3% 0;
+	width: 100vw;
+
+
+  /* alternative case w/o flex  */
+  /* background-color: #66BFBF;
+    position: fixed;
+    bottom: 0;
+    width: 100vw;
+    text-align: center;
+    padding: 5% 0; */
+}
+
+h1 {
+  font-family: "Sacramento", cursive;
+  font-size: 4rem;
+  color: #6dbf71;
+  font-weight: 300;
+	/* margin: 0; */
+	margin-top: 40px;
+	padding-top: 40px;
+}
+
+h2 {
+  color: #6dbf71;
+  font-family: "Sansation", sans-serif;
+  font-size: 2rem;
+  font-weight: normal;
+  
+}
+
+h3 {
+	color: #6dbf71;
+  font-family: "Sansation", sans-serif;
+  font-size: 1.7rem;
+	font-weight: lighter;
+	padding: 40px 40px;
+	width: inherit;
+}
+
+/* footer links */
+footer a {
+  text-decoration: none;
+  color: #93da97;
+  font-size: 1.3rem;
+  font-family: "Sansation", sans-serif;
+  font-weight: 300;
+}
+
+/* social media icons */
+.media-link {
+  width: 3%;
+  /* width: 3rem; */
+}
+
+.my-picture {
+  border-radius: 50%;
+  width: 10%;
+  box-shadow: 1px 3px 19px black;
+}
+
+/* separator between links */
+.separator {
+  font-size: 2rem;
+  color: #e8ffd7;
+}
+
+a:hover {
+  color: #e8ffd7;
+}
+
+@media (width > 1700px) {
+    body,footer {
+				width: 50vw;
+    }
+		body {
+			padding-left: 25%;
+		}
+		
+} 
