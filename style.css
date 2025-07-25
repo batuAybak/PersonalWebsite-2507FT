@@ -1,19 +1,20 @@
 body {
   background-color: #5e936c;
-	display: flex;
-	flex-direction: column;
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 10%;
 }
 
 header {
   background-color: #3e5f44;
-	box-shadow: 1px 1px 20px black;
+  box-shadow: 1px 1px 20px black;
 
   display: flex;
   justify-content: space-around;
 }
 
+/* navigation buttons */
 nav {
-  /* navigation buttons */
   display: flex;
   align-items: center;
   gap: 1rem;
@@ -32,11 +33,63 @@ main {
   background-color: #3e5f44;
   text-align: center;
   margin: 5% 10vw;
-	/* padding-bottom: 3%; */
   box-shadow: 1px 1px 20px black;
-	height: auto;
-  /* display: flex; */
-  /* justify-content: center; */
+  height: auto;
+}
+
+/* images under main */
+main > img {
+  border-radius: 10px;
+  width: 20%;
+  height: auto;
+  box-shadow: 1px 3px 19px black;
+  margin-bottom: 3%;
+  margin-left: 1%;
+}
+
+form {
+  background-color: #3e5f44;
+  text-align: center;
+  margin: 5% 10vw;
+  box-shadow: 1px 1px 20px black;
+  height: auto;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+input,
+textarea {
+  width: 45%;
+  background-color: #5e936c;
+  color: #93da97;
+  border-radius: 4px;
+  border-style: double;
+  font-size: 1.2rem;
+}
+
+input::placeholder,
+textarea::placeholder {
+  color: #93da97;
+}
+
+
+/* Submit button */
+button { 
+  margin-bottom: 3%;
+  background-color: #93da97;
+  border-radius: 10px;
+  border-style: outset;
+  color: #3e5f44;
+  padding: 7px 17px;
+  font-size: 16px;
+  transition-duration: 0.4s;
+}
+
+.button:hover {
+  background-color: green; /* Green */
 }
 
 footer {
@@ -45,20 +98,11 @@ footer {
   justify-content: center;
   align-items: center;
   background-color: #3e5f44;
-	box-shadow: 1px 1px 20px black;
+  box-shadow: 1px 1px 20px black;
   position: fixed;
   bottom: 0;
-  padding: 3% 0;
-	width: 100vw;
-
-
-  /* alternative case w/o flex  */
-  /* background-color: #66BFBF;
-    position: fixed;
-    bottom: 0;
-    width: 100vw;
-    text-align: center;
-    padding: 5% 0; */
+  padding: 2% 0;
+  width: 100vw;
 }
 
 h1 {
@@ -66,9 +110,8 @@ h1 {
   font-size: 4rem;
   color: #6dbf71;
   font-weight: 300;
-	/* margin: 0; */
-	margin-top: 40px;
-	padding-top: 40px;
+  margin-top: 40px;
+  padding-top: 40px;
 }
 
 h2 {
@@ -76,16 +119,15 @@ h2 {
   font-family: "Sansation", sans-serif;
   font-size: 2rem;
   font-weight: normal;
-  
 }
 
 h3 {
-	color: #6dbf71;
+  color: #6dbf71;
   font-family: "Sansation", sans-serif;
   font-size: 1.7rem;
-	font-weight: lighter;
-	padding: 40px 40px;
-	width: inherit;
+  font-weight: lighter;
+  padding: 40px 40px;
+  width: inherit;
 }
 
 /* footer links */
@@ -115,16 +157,18 @@ footer a {
   color: #e8ffd7;
 }
 
+/* hover behavior for all links */
 a:hover {
   color: #e8ffd7;
 }
 
+/* rearrange content for bigger screens */
 @media (width > 1700px) {
-    body,footer {
-				width: 50vw;
-    }
-		body {
-			padding-left: 25%;
-		}
-		
-} 
+  body,
+  footer {
+    width: 50vw;
+  }
+  body {
+    padding-left: 25%;
+  }
+}
