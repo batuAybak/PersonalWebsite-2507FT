@@ -89,7 +89,7 @@ button {
 }
 
 .button:hover {
-  background-color: green; /* Green */
+  background-color: green;
 }
 
 footer {
@@ -142,7 +142,6 @@ footer a {
 /* social media icons */
 .media-link {
   width: 3%;
-  /* width: 3rem; */
 }
 
 .my-picture {
